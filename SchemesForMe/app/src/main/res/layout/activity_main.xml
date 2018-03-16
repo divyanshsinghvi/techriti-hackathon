@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="112dp"
+        android:layout_height="44dp"
         android:layout_marginBottom="68dp"
         android:onClick="hindi"
         android:text="Hindi"
@@ -22,8 +22,8 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="108dp"
+        android:layout_height="45dp"
         android:layout_marginBottom="63dp"
         android:layout_marginEnd="2dp"
         android:layout_marginStart="2dp"
@@ -61,4 +61,30 @@
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_marginStart="3dp"
+        android:drawableBottom="@android:drawable/ic_btn_speak_now"
+        android:onClick="TTS"
+        android:src="@android:drawable/ic_media_play"
+        android:text="speaker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button8" />
+    tools:layout_editor_absoluteX="131dp"
+    tools:layout_editor_absoluteY="411dp" />
 </android.support.constraint.ConstraintLayout>

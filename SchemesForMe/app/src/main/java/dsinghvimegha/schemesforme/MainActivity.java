@@ -12,24 +12,35 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextToSpeech toSpeech;
+    TextToSpeech toSpeechUs,toSpeechHi;
     int result;
+    int result2;
     String text;
+    String text2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        toSpeech = new TextToSpeech(MainActivity.this, new TextToSpeech.OnInitListener(){
+        toSpeechUs = new TextToSpeech(MainActivity.this, new TextToSpeech.OnInitListener(){
             @Override
             public void onInit(int i) {
-                result = toSpeech.setLanguage(Locale.UK);
-                }
+                result = toSpeechUs.setLanguage(Locale.UK);
+            }
+        });
+        toSpeechHi = new TextToSpeech(MainActivity.this, new TextToSpeech.OnInitListener(){
+            @Override
+            public void onInit(int i) {
+                result = toSpeechHi.setLanguage(new Locale("hi","IN"));
+            }
         });
     }
 
     public void TTS(View view){
-        text = "Hello लिंग";
-        toSpeech.speak(text, TextToSpeech.QUEUE_FLUSH,null);
+
+        text = "For English Press Orange Color Button";
+        toSpeechUs.speak(text, TextToSpeech.QUEUE_FLUSH,null);
+        text2 = "Hindi ke liye paach dabaaye";
+        toSpeechHi.speak(text2, TextToSpeech.QUEUE_FLUSH,null);
 
     }
     public void english(View view){
