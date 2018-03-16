@@ -5,4 +5,6 @@
     <string name="title_activity_english1">English1Activity</string>
     <string name="title_activity_hindi1">Hindi1Activity</string>
     <string name="title_activity_tamil1">Tamil1Activity</string>
+    <string name="title_activity_english3">English3Activity</string>
+    <string name="title_activity_english4">English4Activity</string>
 </resources>
