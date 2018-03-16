@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dsinghvimegha.schemesforme.Lt3Activity">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="397dp"
+        android:stretchColumns="1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="114dp">
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Amount of loan	" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Rs.3 lakh" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Loan amount eligible for the subsidy	" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Rs.3 lakh" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Balance loan	" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Rs.1,66,360.00" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Interest subsidy	" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Rs.1,33,640.00" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Initial EMI	" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Rs.2,895" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Reduced EMI after subsidy credit	" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Rs.1,605" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="338dp"
+        android:layout_height="41dp"
+        android:text="PMAY Home Loan Scheme for LIG/EWS Category"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -7,6 +7,10 @@
     <string name="title_activity_tamil1">Tamil1Activity</string>
     <string name="title_activity_english3">English3Activity</string>
     <string name="title_activity_english4">English4Activity</string>
+    <string name="title_activity_lt3">Lt3Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
     <string name="title_activity_hindi3">Hindi3Activity</string>
     <string name="title_activity_hindi4">Hindi4Activity</string>
 </resources>
