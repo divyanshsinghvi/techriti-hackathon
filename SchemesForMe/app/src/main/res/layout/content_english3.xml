@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="dsinghvimegha.schemesforme.English2Activity"
-    tools:showIn="@layout/activity_english2">
-
+    tools:context="dsinghvimegha.schemesforme.English3Activity"
+    tools:showIn="@layout/activity_english3">
 
     <RadioButton
         android:id="@+id/radioButton5"
@@ -15,7 +14,7 @@
         android:layout_height="44dp"
         android:layout_marginBottom="44dp"
         android:layout_marginTop="41dp"
-        android:text="3 to 6 Lakh"
+        android:text="SC"
         app:layout_constraintBottom_toBottomOf="@+id/radioButton6"
         app:layout_constraintEnd_toEndOf="@+id/radioButton6"
         app:layout_constraintStart_toStartOf="@+id/radioButton6"
@@ -26,7 +25,7 @@
         android:layout_width="0dp"
         android:layout_height="44dp"
         android:layout_marginTop="173dp"
-        android:text="Less than 3Lakh"
+        android:text="General"
         app:layout_constraintEnd_toEndOf="@+id/radioButton5"
         app:layout_constraintStart_toStartOf="@+id/radioButton5"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +36,7 @@
         android:layout_height="44dp"
         android:layout_marginBottom="44dp"
         android:layout_marginTop="41dp"
-        android:text="6 to 12 Lakh"
+        android:text="ST"
         app:layout_constraintBottom_toBottomOf="@+id/radioButton3"
         app:layout_constraintEnd_toEndOf="@+id/radioButton3"
         app:layout_constraintStart_toStartOf="@+id/radioButton3"
@@ -45,11 +44,11 @@
 
     <RadioButton
         android:id="@+id/radioButton3"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
         android:layout_marginBottom="165dp"
         android:layout_marginStart="38dp"
-        android:text="12 to 18 Lakh"
+        android:text="OBC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -64,7 +63,7 @@
         android:autoText="true"
         android:autofillHints="@android:drawable/bottom_bar"
         android:background="@android:color/darker_gray"
-        android:text="Income"
+        android:text="Category"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -106,4 +105,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
