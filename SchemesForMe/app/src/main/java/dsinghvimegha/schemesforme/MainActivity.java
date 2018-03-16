@@ -13,7 +13,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void english(View view){
-        Intent intent = new Intent(this, English2Activity.class);
+        Intent intent = new Intent(this, English1Activity.class);
+        startActivity(intent);
+
+    }
+
+    public void hindi(View view){
+        Intent intent = new Intent(this, Hindi1Activity.class);
+        startActivity(intent);
+
+    }
+
+    public void tamil(View view){
+        Intent intent = new Intent(this, Tamil1Activity.class);
         startActivity(intent);
 
     }

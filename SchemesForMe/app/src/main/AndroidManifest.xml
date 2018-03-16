@@ -19,6 +19,18 @@
         <activity
             android:name=".English2Activity"
             android:label="@string/title_activity_english2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".English1Activity"
+            android:label="@string/title_activity_english1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Hindi1Activity"
+            android:label="@string/title_activity_hindi1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tamil1Activity"
+            android:label="@string/title_activity_tamil1"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

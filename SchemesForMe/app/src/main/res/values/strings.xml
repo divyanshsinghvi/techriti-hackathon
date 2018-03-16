@@ -2,4 +2,7 @@
     <string name="app_name">SchemesForMe</string>
     <string name="edit">enter</string>
     <string name="title_activity_english2">English2Activity</string>
+    <string name="title_activity_english1">English1Activity</string>
+    <string name="title_activity_hindi1">Hindi1Activity</string>
+    <string name="title_activity_tamil1">Tamil1Activity</string>
 </resources>
