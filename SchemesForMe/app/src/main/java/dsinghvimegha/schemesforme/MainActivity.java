@@ -36,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void TTS(View view){
+
         text = "For English Press Orange Color Button";
         toSpeechUs.speak(text, TextToSpeech.QUEUE_FLUSH,null);
         text2 = "Hindi ke liye paach dabaaye";
         toSpeechHi.speak(text2, TextToSpeech.QUEUE_FLUSH,null);
-
 
     }
     public void english(View view){

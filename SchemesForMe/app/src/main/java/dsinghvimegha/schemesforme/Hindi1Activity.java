@@ -1,5 +1,6 @@
 package dsinghvimegha.schemesforme;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -25,5 +26,14 @@ public class Hindi1Activity extends AppCompatActivity {
             }
         });
     }
+    public void next(View view){
+        Intent intent = new Intent(this,Hindi2Activity.class);
+        startActivity(intent);
 
+    }
+    public void previous(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
+    }
 }

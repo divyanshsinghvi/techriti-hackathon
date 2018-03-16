@@ -8,12 +8,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class Hindi4Activity extends AppCompatActivity {
+public class Hindi2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hindi4);
+        setContentView(R.layout.activity_hindi2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -25,6 +25,11 @@ public class Hindi4Activity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+    public void next(View view){
+        Intent intent = new Intent(this, Hindi1Activity.class);
+        startActivity(intent);
+
     }
     public void previous(View view){
         Intent intent = new Intent(this, Hindi3Activity.class);
