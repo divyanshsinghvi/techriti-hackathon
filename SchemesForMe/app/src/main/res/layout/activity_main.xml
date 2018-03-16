@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="68dp"
-        android:onClick="TTS"
+        android:onClick="hindi"
         android:text="Hindi"
         app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintEnd_toEndOf="@+id/button7"

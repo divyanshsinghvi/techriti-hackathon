@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void TTS(View view){
-        text = "Hello";
+        text = "Hello लिंग";
         toSpeech.speak(text, TextToSpeech.QUEUE_FLUSH,null);
 
     }
