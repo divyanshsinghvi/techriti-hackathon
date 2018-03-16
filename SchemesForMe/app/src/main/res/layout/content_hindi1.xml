@@ -44,8 +44,8 @@
 
     <RadioButton
         android:id="@+id/radioButton3"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
+        android:layout_width="101dp"
+        android:layout_height="51dp"
         android:layout_marginBottom="165dp"
         android:layout_marginStart="38dp"
         android:text="अन्य"

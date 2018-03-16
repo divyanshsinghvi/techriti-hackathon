@@ -2,14 +2,20 @@ package dsinghvimegha.schemesforme;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import java.util.Locale;
+
 public class English2Activity extends AppCompatActivity {
 
+    TextToSpeech toSpeechUs;
+    int result;
+    String text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +31,25 @@ public class English2Activity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        toSpeechUs = new TextToSpeech(this, new TextToSpeech.OnInitListener(){
+            @Override
+            public void onInit(int i) {
+                result = toSpeechUs.setLanguage(Locale.UK);
+            }
+        });
     }
+    public void TTS(View view){
 
+        text = "Choose your annual income range " +
+                "For less than 3 Lakh press green option" +
+                "Between 3 to 6 Lakh press orange option" +
+                "Between 6 to 12 Lakh press blue option" +
+                "Bettween 12 to 18 Lakh press red option";
+        toSpeechUs.setSpeechRate(0.8f);
+        toSpeechUs.speak(text, TextToSpeech.QUEUE_FLUSH,null);
+
+
+    }
 
     public void next(View view){
         Intent intent = new Intent(this, English3Activity.class);

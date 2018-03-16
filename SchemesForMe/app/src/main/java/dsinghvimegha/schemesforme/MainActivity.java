@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         toSpeechHi = new TextToSpeech(MainActivity.this, new TextToSpeech.OnInitListener(){
             @Override
             public void onInit(int i) {
-                result = toSpeechHi.setLanguage(new Locale("hi","IN"));
+                result = toSpeechHi.setLanguage(new Locale("hin","IN"));
             }
         });
     }
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         text = "For English Press Orange Color Button";
         toSpeechUs.speak(text, TextToSpeech.QUEUE_FLUSH,null);
-        text2 = "Hindi ke liye paach dabaaye";
+        text2 = "Hindi ke liye हरी बटन दबाएं";
         toSpeechHi.speak(text2, TextToSpeech.QUEUE_FLUSH,null);
 
     }
