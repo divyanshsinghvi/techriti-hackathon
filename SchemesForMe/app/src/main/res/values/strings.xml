@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SchemesForMe</string>
     <string name="edit">enter</string>
+    <string name="title_activity_english2">English2Activity</string>
 </resources>

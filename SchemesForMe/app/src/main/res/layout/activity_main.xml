@@ -26,7 +26,7 @@
         android:layout_marginBottom="63dp"
         android:layout_marginEnd="2dp"
         android:layout_marginStart="2dp"
-        android:onClick="sendMessage"
+        android:onClick="english"
         android:text="English"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintEnd_toEndOf="@+id/button8"
