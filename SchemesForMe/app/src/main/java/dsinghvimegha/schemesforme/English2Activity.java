@@ -42,8 +42,8 @@ public class English2Activity extends AppCompatActivity {
     public void TTS(View view){
 
         text = "Choose your annual income range. " +
-                "For less than 3 Lakh select first checkbox." +
-                "Between 3 to 6 Lakh select second checkbox." +
+                "Between 3 to 6 Lakh select first checkbox." +
+                "For less than 3 Lakh select second checkbox." +
                 "Between 6 to 12 Lakh select third checkbox." +
                 "Bettween 12 to 18 Lakh select last option.";
         toSpeechUs.setSpeechRate(0.8f);
@@ -58,21 +58,21 @@ public class English2Activity extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch(view.getId()) {
-            case R.id.radioButton7:
-                if (checked)
-                    // Pirates are the best
-                    break;
-            case R.id.radioButton3:
-                if (checked)
-                    // Ninjas rule
-                    break;
             case R.id.radioButton5:
                 if (checked)
-                    // Ninjas rule
+                    ((globalClass)getApplication()).setIncome(1);
+                    break;
+            case R.id.radioButton7:
+                if (checked)
+                    ((globalClass)getApplication()).setIncome(2);
                     break;
             case R.id.radioButton6:
                 if (checked)
-                    // Ninjas rule
+                    ((globalClass)getApplication()).setIncome(3);
+                    break;
+            case R.id.radioButton3:
+                if (checked)
+                    ((globalClass)getApplication()).setIncome(4);
                     break;
         }
     }

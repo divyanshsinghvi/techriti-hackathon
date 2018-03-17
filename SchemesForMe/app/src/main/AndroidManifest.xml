@@ -3,6 +3,7 @@
     package="dsinghvimegha.schemesforme">
 
     <application
+        android:name=".globalClass"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -56,6 +57,14 @@
         <activity
             android:name=".Hindi2Activity"
             android:label="@string/title_activity_hindi2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".English5Activity"
+            android:label="@string/title_activity_english5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Hindi5Activity"
+            android:label="@string/title_activity_hindi5"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

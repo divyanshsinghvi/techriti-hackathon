@@ -43,8 +43,8 @@ public class English3Activity extends AppCompatActivity {
     public void TTS(View view){
 
         text = "Choose Your Category. " +
-                "For General select first checkbox." +
-                "For Scheduled Caste select second checkbox." +
+                "For Scheduled Caste select first checkbox." +
+                "For General select second checkbox." +
                 "For Scheduled Tribe select third checkbox." +
                 "For Other Backward Classes select last option.";
         toSpeechUs.setSpeechRate(0.8f);
@@ -58,21 +58,21 @@ public class English3Activity extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch(view.getId()) {
-            case R.id.radioButton7:
-                if (checked)
-                    // Pirates are the best
-                    break;
-            case R.id.radioButton3:
-                if (checked)
-                    // Ninjas rule
-                    break;
             case R.id.radioButton5:
                 if (checked)
-                    // Ninjas rule
+                    ((globalClass)getApplication()).setCategory(1);
+                    break;
+            case R.id.radioButton7:
+                if (checked)
+                    ((globalClass)getApplication()).setCategory(2);
                     break;
             case R.id.radioButton6:
                 if (checked)
-                    // Ninjas rule
+                    ((globalClass)getApplication()).setCategory(3);
+                    break;
+            case R.id.radioButton3:
+                if (checked)
+                    ((globalClass)getApplication()).setCategory(4);
                     break;
         }
     }

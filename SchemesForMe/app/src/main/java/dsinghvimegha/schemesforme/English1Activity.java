@@ -44,8 +44,8 @@ public class English1Activity extends AppCompatActivity {
     public void TTS(View view){
 
         text = "Choose Scheme you want to know your eligibility for. " +
-                "For Housing press select first checkbox." +
-                "For Financial press select second checkbox." +
+                "For Financial press select first checkbox." +
+                "For Housing press select second checkbox." +
                 "For Educational select third checkbox." +
                 "For Other select last option.";
         toSpeechUs.setSpeechRate(0.8f);

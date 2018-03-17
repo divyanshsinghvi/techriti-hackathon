@@ -45,21 +45,13 @@ public class English4Activity extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch(view.getId()) {
-            case R.id.radioButton7:
-                if (checked)
-                    // Pirates are the best
-                    break;
             case R.id.radioButton3:
                 if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.radioButton5:
-                if (checked)
-                    // Ninjas rule
+                    ((globalClass)getApplication()).setGender(2);
                     break;
             case R.id.radioButton6:
                 if (checked)
-                    // Ninjas rule
+                    ((globalClass)getApplication()).setGender(1);
                     break;
         }
     }
@@ -67,14 +59,19 @@ public class English4Activity extends AppCompatActivity {
     public void TTS(View view){
 
         text = "Choose your Gender." +
-                "For Male select first checkbox." +
-                "For Female select second option.";
+                "For Female select first option." +
+        "For Male select second checkbox." ;
         toSpeechUs.setSpeechRate(0.8f);
         toSpeechUs.speak(text, TextToSpeech.QUEUE_FLUSH,null);
 
 
     }
 
+    public void next(View view){
+
+        Intent intent = new Intent(this, English5Activity.class);
+        startActivity(intent);
+    }
     public void previous(View view) {
         Intent intent = new Intent(this, English3Activity.class);
         startActivity(intent);

@@ -39,8 +39,10 @@
             android:id="@+id/radioButton5"
             android:layout_width="125dp"
             android:layout_height="44dp"
+            android:checked="true"
             android:text="3 to 6 Lakh"
-            tools:layout_editor_absoluteX="38dp"
+            android:onClick="onRadioButtonClicked"
+        tools:layout_editor_absoluteX="38dp"
             tools:layout_editor_absoluteY="214dp" />
 
         <RadioButton
@@ -48,6 +50,8 @@
             android:layout_width="125dp"
             android:layout_height="44dp"
             android:text="Less than 3Lakh"
+
+            android:onClick="onRadioButtonClicked"
             tools:layout_editor_absoluteX="38dp"
             tools:layout_editor_absoluteY="173dp" />
 
@@ -56,6 +60,8 @@
             android:layout_width="125dp"
             android:layout_height="44dp"
             android:text="6 to 12 Lakh"
+
+            android:onClick="onRadioButtonClicked"
             tools:layout_editor_absoluteX="38dp"
             tools:layout_editor_absoluteY="258dp" />
 
@@ -64,6 +70,8 @@
             android:layout_width="125dp"
             android:layout_height="41dp"
             android:text="12 to 18 Lakh"
+
+            android:onClick="onRadioButtonClicked"
             tools:layout_editor_absoluteX="38dp"
             tools:layout_editor_absoluteY="305dp" />
     </RadioGroup>

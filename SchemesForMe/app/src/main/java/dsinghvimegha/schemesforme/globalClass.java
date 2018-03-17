@@ -10,6 +10,7 @@ public class globalClass extends Application {
     int income;
     int category;
     int gender;
+    int loan;
     public void setIncome(int income)
     {
         this.income = income;
@@ -21,6 +22,10 @@ public class globalClass extends Application {
     public void setGender(int gender)
     {
         this.gender = gender;
+    }
+    public void setLoan(int loan)
+    {
+        this.loan = loan;
     }
 
 }

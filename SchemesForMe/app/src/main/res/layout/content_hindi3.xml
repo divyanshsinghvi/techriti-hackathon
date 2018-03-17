@@ -40,6 +40,8 @@
             android:layout_width="129dp"
             android:layout_height="44dp"
             android:text="अनुसूचित जाति "
+
+            android:onClick="onRadioButtonClicked"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="164dp" />
 
@@ -47,6 +49,9 @@
             android:id="@+id/radioButton7"
             android:layout_width="129dp"
             android:layout_height="44dp"
+            android:checked="true"
+
+            android:onClick="onRadioButtonClicked"
             android:text="सामान्य"
             tools:layout_editor_absoluteX="36dp"
             tools:layout_editor_absoluteY="173dp" />

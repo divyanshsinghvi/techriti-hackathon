@@ -5,10 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="dsinghvimegha.schemesforme.Hindi4Activity"
-    tools:layout_editor_absoluteY="81dp"
-    tools:showIn="@layout/activity_hindi4">
-
+    tools:context="dsinghvimegha.schemesforme.Hindi5Activity"
+    tools:showIn="@layout/activity_hindi5">
 
     <Button
         android:id="@+id/button"
@@ -26,55 +24,76 @@
         app:layout_constraintStart_toStartOf="@+id/button3" />
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/radioGroup5"
+        android:id="@+id/radioGroup4"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="199dp"
+        android:layout_height="173dp"
+        android:layout_marginBottom="76dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="129dp"
+            android:layout_height="44dp"
+            android:onClick="onRadioButtonClicked"
+
+            android:text="अनुसूचित जाति "
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="164dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="129dp"
+            android:layout_height="44dp"
+            android:checked="true"
+
+            android:onClick="onRadioButtonClicked"
+            android:text="सामान्य"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="173dp" />
 
         <RadioButton
             android:id="@+id/radioButton6"
             android:layout_width="129dp"
             android:layout_height="44dp"
-            android:checked="true"
-            android:text="नर"
-
-            android:onClick="onRadioButtonClicked"
+            android:text="अनुसूचित जनजाति"
             tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="175dp" />
+            tools:layout_editor_absoluteY="259dp" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="129dp"
             android:layout_height="43dp"
-            android:text="महिला"
-
-            android:onClick="onRadioButtonClicked"
+            android:text="अन्य पिछड़े वर्ग"
             tools:layout_editor_absoluteX="36dp"
             tools:layout_editor_absoluteY="304dp" />
+
     </RadioGroup>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
-        android:layout_height="29dp"
-        android:layout_marginBottom="76dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="68dp"
         android:layout_marginEnd="37dp"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="74dp"
+        android:layout_marginTop="8dp"
+        android:autoText="true"
         android:autofillHints="@android:drawable/bottom_bar"
         android:background="@android:color/darker_gray"
-        android:text="लिंग"
+        android:text="जाति"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup5"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/progressBar" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button2"
@@ -97,16 +116,4 @@
         android:text="अगला"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="0dp"
-        android:layout_height="26dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

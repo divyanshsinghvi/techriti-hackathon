@@ -7,11 +7,15 @@
     tools:context="dsinghvimegha.schemesforme.Mig2Activity">
 
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="397dp"
+        android:id="@+id/tableLayout6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="92dp"
         android:stretchColumns="1"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="114dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
 
         <TableRow>
 
@@ -36,6 +40,7 @@
                 android:padding="3dip"
                 android:text="20 years" />
         </TableRow>
+
         <TableRow>
 
             <TextView
@@ -47,6 +52,7 @@
                 android:padding="3dip"
                 android:text="4%" />
         </TableRow>
+
         <TableRow>
 
             <TextView
@@ -58,6 +64,7 @@
                 android:padding="3dip"
                 android:text="2,35 Lakh" />
         </TableRow>
+
         <TableRow>
 
             <TextView
@@ -76,8 +83,12 @@
     <TextView
         android:id="@+id/textView11"
         android:layout_width="338dp"
-        android:layout_height="41dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="39dp"
         android:text="PMAY Home Loan Scheme for MIG1"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="39dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

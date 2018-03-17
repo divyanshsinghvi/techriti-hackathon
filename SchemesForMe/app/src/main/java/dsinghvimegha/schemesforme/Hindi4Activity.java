@@ -10,6 +10,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.RadioButton;
 
+import java.util.Locale;
+
 public class Hindi4Activity extends AppCompatActivity {
 
 
@@ -29,6 +31,12 @@ public class Hindi4Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+        toSpeechUs = new TextToSpeech(this, new TextToSpeech.OnInitListener(){
+            @Override
+            public void onInit(int i) {
+                result = toSpeechUs.setLanguage(new Locale("hin"));
             }
         });
     }
@@ -62,6 +70,14 @@ public class Hindi4Activity extends AppCompatActivity {
 
         }
     }
+
+
+    public void next(View view){
+
+        Intent intent = new Intent(this, English5Activity.class);
+        startActivity(intent);
+    }
+
     public void previous(View view){
         Intent intent = new Intent(this, Hindi3Activity.class);
         startActivity(intent);
