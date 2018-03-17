@@ -52,28 +52,29 @@ public class Hindi2Activity extends AppCompatActivity {
 
 
     }
+
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
         switch(view.getId()) {
-            case R.id.radioButton7:
-                if (checked)
-                    // Pirates are the best
-                    break;
-            case R.id.radioButton3:
-                if (checked)
-                    // Ninjas rule
-                    break;
             case R.id.radioButton5:
                 if (checked)
-                    // Ninjas rule
-                    break;
+                    ((globalClass)getApplication()).setIncome(1);
+                break;
+            case R.id.radioButton7:
+                if (checked)
+                    ((globalClass)getApplication()).setIncome(2);
+                break;
             case R.id.radioButton6:
                 if (checked)
-                    // Ninjas rule
-                    break;
+                    ((globalClass)getApplication()).setIncome(3);
+                break;
+            case R.id.radioButton3:
+                if (checked)
+                    ((globalClass)getApplication()).setIncome(4);
+                break;
         }
     }
 

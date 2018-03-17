@@ -58,23 +58,21 @@ public class Hindi4Activity extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch(view.getId()) {
-
             case R.id.radioButton3:
                 if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.radioButton5:
+                    ((globalClass)getApplication()).setGender(2);
+                break;
+            case R.id.radioButton6:
                 if (checked)
-                    // Ninjas rule
-                    break;
-
+                    ((globalClass)getApplication()).setGender(1);
+                break;
         }
     }
 
 
     public void next(View view){
 
-        Intent intent = new Intent(this, English5Activity.class);
+        Intent intent = new Intent(this, Hindi5Activity.class);
         startActivity(intent);
     }
 

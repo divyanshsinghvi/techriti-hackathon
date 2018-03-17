@@ -85,13 +85,28 @@ public class English5Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         }
-        else  if(((globalClass)getApplication()).income == 2 )
+        else if(((globalClass)getApplication()).income == 2 )
+        {
+            if(((globalClass)getApplication()).loan == 1 ) {
+                Intent intent = new Intent(this, Lt3Activity.class);
+                startActivity(intent);
+            }
+            else if(((globalClass)getApplication()).loan == 2 ) {
+                Intent intent = new Intent(this, Lt6Activity.class);
+                startActivity(intent);
+            }
+            else  if(((globalClass)getApplication()).loan == 3 ) {
+                Intent intent = new Intent(this, Lt10Activity.class);
+                startActivity(intent);
+            }
+        }
+        else  if(((globalClass)getApplication()).income == 3 )
         {
                 Intent intent = new Intent(this, Mig1Activity.class);
                 startActivity(intent);
         }
 
-        else  if(((globalClass)getApplication()).income == 3 )
+        else  if(((globalClass)getApplication()).income == 4 )
         {
             Intent intent = new Intent(this, Mig2Activity.class);
             startActivity(intent);

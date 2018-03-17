@@ -58,22 +58,22 @@ public class Hindi5Activity extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch(view.getId()) {
-            case R.id.radioButton7:
-                if (checked)
-                    // Pirates are the best
-                    break;
-            case R.id.radioButton3:
-                if (checked)
-                    // Ninjas rule
-                    break;
             case R.id.radioButton5:
                 if (checked)
-                    // Ninjas rule
-                    break;
+                    ((globalClass)getApplication()).setLoan(1);
+                break;
+            case R.id.radioButton7:
+                if (checked)
+                    ((globalClass)getApplication()).setLoan(2);
+                break;
             case R.id.radioButton6:
                 if (checked)
-                    // Ninjas rule
-                    break;
+                    ((globalClass)getApplication()).setLoan(3);
+                break;
+            case R.id.radioButton3:
+                if (checked)
+                    ((globalClass)getApplication()).setLoan(4);
+                break;
         }
     }
 
@@ -93,13 +93,28 @@ public class Hindi5Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         }
-        else  if(((globalClass)getApplication()).income == 2 )
+        if(((globalClass)getApplication()).income == 2 )
+        {
+            if(((globalClass)getApplication()).loan == 1 ) {
+                Intent intent = new Intent(this, Lt3Activity.class);
+                startActivity(intent);
+            }
+            else if(((globalClass)getApplication()).loan == 2 ) {
+                Intent intent = new Intent(this, Lt6Activity.class);
+                startActivity(intent);
+            }
+            else  if(((globalClass)getApplication()).loan == 3 ) {
+                Intent intent = new Intent(this, Lt10Activity.class);
+                startActivity(intent);
+            }
+        }
+        else  if(((globalClass)getApplication()).income == 3 )
         {
             Intent intent = new Intent(this, Mig1Activity.class);
             startActivity(intent);
         }
 
-        else  if(((globalClass)getApplication()).income == 3 )
+        else  if(((globalClass)getApplication()).income == 4 )
         {
             Intent intent = new Intent(this, Mig2Activity.class);
             startActivity(intent);
