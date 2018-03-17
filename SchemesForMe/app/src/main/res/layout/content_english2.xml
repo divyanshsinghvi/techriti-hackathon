@@ -76,6 +76,7 @@
         android:layout_marginBottom="22dp"
         android:layout_marginEnd="37dp"
         android:layout_marginStart="37dp"
+        android:layout_marginTop="8dp"
         android:autoText="true"
         android:autofillHints="@android:drawable/bottom_bar"
         android:background="@android:color/darker_gray"
@@ -85,7 +86,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
@@ -109,15 +111,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="0dp"
-        android:layout_height="26dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
