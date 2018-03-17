@@ -11,52 +11,71 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="115dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="3dp"
         android:drawableBottom="@android:drawable/ic_btn_speak_now"
         android:onClick="TTS"
         android:src="@android:drawable/ic_media_play"
         android:text="speaker"
-        tools:layout_editor_absoluteX="261dp"
-        tools:layout_editor_absoluteY="365dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button3" />
 
 
-    <RadioButton
-        android:id="@+id/radioButton5"
-        android:layout_width="117dp"
-        android:layout_height="44dp"
-        android:text="3 to 6 Lakh"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="214dp" />
-
-    <RadioButton
-        android:id="@+id/radioButton7"
-        android:layout_width="117dp"
-        android:layout_height="44dp"
-        android:text="Less than 3Lakh"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="173dp" />
-
-    <RadioButton
-        android:id="@+id/radioButton6"
-        android:layout_width="117dp"
-        android:layout_height="44dp"
-        android:text="6 to 12 Lakh"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="258dp" />
-
-    <RadioButton
-        android:id="@+id/radioButton3"
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioGroup6"
         android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:text="12 to 18 Lakh"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="302dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:text="3 to 6 Lakh"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="214dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:text="Less than 3Lakh"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="173dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:text="6 to 12 Lakh"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="258dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="125dp"
+            android:layout_height="41dp"
+            android:text="12 to 18 Lakh"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="305dp" />
+    </RadioGroup>
+
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="310dp"
+        android:layout_width="0dp"
         android:layout_height="35dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginStart="37dp"
         android:autoText="true"
         android:autofillHints="@android:drawable/bottom_bar"
         android:background="@android:color/darker_gray"
@@ -64,32 +83,41 @@
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="94dp" />
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginStart="16dp"
         android:onClick="previous"
         android:text="Previous"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="446dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="38dp"
         android:onClick="next"
         android:text="Next"
-        tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="446dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="294dp"
+        android:layout_width="0dp"
         android:layout_height="26dp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="20dp" />
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
