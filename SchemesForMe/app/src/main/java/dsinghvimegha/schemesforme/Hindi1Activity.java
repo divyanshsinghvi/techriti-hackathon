@@ -33,11 +33,11 @@ public class Hindi1Activity extends AppCompatActivity {
     }
     public void TTS(View view){
 
-        text = "वह योजना चुनें, जिसके लिए आप अपनी पात्रता जानना चाहते हैं" +
-                "आवास के लिए प्रथम चेकबॉक्स चुनें" +
-                "वित्तीय के लिए दूसरा चेकबॉक्स चुनें" +
-                "शिक्षात्मक के लिए तीसरा चेकबॉक्स चुनें" +
-                "अन्य के लिए अंतिम चेकबॉक्स चुनें";
+        text = "वह योजना चुनें, जिसके लिए आप अपनी पात्रता जानना चाहते हैं।" +
+                "आवास के लिए प्रथम चेकबॉक्स चुनें।" +
+                "वित्तीय के लिए दूसरा चेकबॉक्स चुनें।" +
+                "शिक्षात्मक के लिए तीसरा चेकबॉक्स चुनें।" +
+                "अन्य के लिए अंतिम चेकबॉक्स चुनें।";
         toSpeechUs.setSpeechRate(0.8f);
         toSpeechUs.speak(text, TextToSpeech.QUEUE_FLUSH,null);
 
@@ -46,11 +46,13 @@ public class Hindi1Activity extends AppCompatActivity {
     public void nexti(View view){
         Intent intent = new Intent(this,Hindi2Activity.class);
         startActivity(intent);
+        toSpeechUs.stop();
 
     }
     public void previous(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        toSpeechUs.stop();
 
     }
 }
