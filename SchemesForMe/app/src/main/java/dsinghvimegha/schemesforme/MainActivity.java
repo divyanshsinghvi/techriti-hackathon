@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void TTS(View view){
 
-        text = "For English Press Orange Color Button";
+        text = "For English Select first checkbox";
         toSpeechUs.speak(text, TextToSpeech.QUEUE_FLUSH,null);
-        text2 = "Hindi ke liye हरी बटन दबाएं";
+        text2 = "हिंदी के लिए दूसरा चेकबॉक्स चुनें";
         toSpeechHi.speak(text2, TextToSpeech.QUEUE_FLUSH,null);
 
     }
