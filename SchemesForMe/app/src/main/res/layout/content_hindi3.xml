@@ -8,6 +8,21 @@
     tools:context="dsinghvimegha.schemesforme.Hindi3Activity"
     tools:showIn="@layout/activity_hindi3">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="3dp"
+        android:drawableBottom="@android:drawable/ic_btn_speak_now"
+        android:onClick="TTS"
+        android:src="@android:drawable/ic_media_play"
+        android:text="speaker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button8" />
+
     <RadioButton
         android:id="@+id/radioButton5"
         android:layout_width="0dp"

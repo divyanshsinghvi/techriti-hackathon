@@ -8,6 +8,17 @@
     tools:context="dsinghvimegha.schemesforme.Hindi1Activity"
     tools:showIn="@layout/activity_hindi1">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@android:drawable/ic_btn_speak_now"
+        android:onClick="TTS"
+        android:src="@android:drawable/ic_media_play"
+        android:text="speaker"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="451dp" />
+
     <RadioButton
         android:id="@+id/radioButton5"
         android:layout_width="0dp"
