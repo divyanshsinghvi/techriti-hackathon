@@ -43,9 +43,9 @@ public class Hindi4Activity extends AppCompatActivity {
 
     public void TTS(View view){
 
-        text = "वह योजना चुनें, जिसके लिए आप अपनी पात्रता जानना चाहते हैं" +
-                "नर के लिए प्रथम चेकबॉक्स चुनें" +
-                "महिला के लिए दूसरा चेकबॉक्स चुनें";
+        text = "वह योजना चुनें, जिसके लिए आप अपनी पात्रता जानना चाहते हैं।" +
+                "नर के लिए प्रथम चेकबॉक्स चुनें।" +
+                "महिला के लिए दूसरा चेकबॉक्स चुनें।";
         toSpeechUs.setSpeechRate(0.8f);
         toSpeechUs.speak(text, TextToSpeech.QUEUE_FLUSH,null);
 
@@ -81,6 +81,7 @@ public class Hindi4Activity extends AppCompatActivity {
     public void previous(View view){
         Intent intent = new Intent(this, Hindi3Activity.class);
         startActivity(intent);
+        toSpeechUs.stop();
 
     }
 }

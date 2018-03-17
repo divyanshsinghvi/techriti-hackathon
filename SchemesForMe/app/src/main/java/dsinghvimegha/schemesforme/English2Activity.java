@@ -80,11 +80,14 @@ public class English2Activity extends AppCompatActivity {
     public void next(View view){
         Intent intent = new Intent(this, English3Activity.class);
         startActivity(intent);
+        toSpeechUs.stop();
+
 
     }
     public void previous(View view){
         Intent intent = new Intent(this, English1Activity.class);
         startActivity(intent);
+        toSpeechUs.stop();
 
     }
 }

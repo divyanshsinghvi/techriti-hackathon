@@ -46,13 +46,15 @@ public class MainActivity extends AppCompatActivity {
     public void english(View view){
         Intent intent = new Intent(this, English1Activity.class);
         startActivity(intent);
-
+        toSpeechUs.stop();
+        toSpeechHi.stop();
     }
 
     public void hindi(View view){
         Intent intent = new Intent(this, Hindi1Activity.class);
         startActivity(intent);
-
+        toSpeechUs.stop();
+        toSpeechHi.stop();
     }
 
     public void tamil(View view){
