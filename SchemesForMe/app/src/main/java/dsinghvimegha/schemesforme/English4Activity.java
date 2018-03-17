@@ -42,8 +42,8 @@ public class English4Activity extends AppCompatActivity {
     public void TTS(View view){
 
         text = "Choose your Gender" +
-                "For Male  press green option" +
-                "For Female press orange option";
+                "For Male select first checkbox" +
+                "For Female select second option";
         toSpeechUs.setSpeechRate(0.8f);
         toSpeechUs.speak(text, TextToSpeech.QUEUE_FLUSH,null);
 

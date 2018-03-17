@@ -42,10 +42,10 @@ public class English3Activity extends AppCompatActivity {
     public void TTS(View view){
 
         text = "Choose Your Category " +
-                "For General press green option" +
-                "For Scheduled Caste press orange option" +
-                "For Scheduled Tribe press blue option" +
-                "For Other Backward Classes press red option";
+                "For General select first checkbox" +
+                "For Scheduled Caste select second checkbox" +
+                "For Scheduled Tribe select third checkbox" +
+                "For Other Backward Classes select last option";
         toSpeechUs.setSpeechRate(0.8f);
         toSpeechUs.speak(text, TextToSpeech.QUEUE_FLUSH,null);
 

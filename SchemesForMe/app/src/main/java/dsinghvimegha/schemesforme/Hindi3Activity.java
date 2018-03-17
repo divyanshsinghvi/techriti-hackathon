@@ -34,11 +34,11 @@ public class Hindi3Activity extends AppCompatActivity {
 
     public void TTS(View view){
 
-        text = "Choose Scheme you want to know eligibility for " +
-                "For Housing press green option" +
-                "For Financial press orange option" +
-                "For Educational press blue option" +
-                "For Other press red option";
+        text = "वह योजना चुनें, जिसके लिए आप अपनी पात्रता जानना चाहते हैं\n" +
+                "अनुसूचित जाति  के लिए प्रथम चेकबॉक्स चुनें" +
+                "सामान्य के लिए दूसरा चेकबॉक्स चुनें" +
+                "अनुसूचित जनजाति के लिए तीसरा चेकबॉक्स चुनें" +
+                "अन्य पिछड़े वर्ग के लिए अंतिम चेकबॉक्स चुनें";
         toSpeechUs.setSpeechRate(0.8f);
         toSpeechUs.speak(text, TextToSpeech.QUEUE_FLUSH,null);
 

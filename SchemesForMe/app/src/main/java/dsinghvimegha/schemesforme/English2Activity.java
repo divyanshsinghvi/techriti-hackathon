@@ -41,10 +41,10 @@ public class English2Activity extends AppCompatActivity {
     public void TTS(View view){
 
         text = "Choose your annual income range " +
-                "For less than 3 Lakh press green option" +
-                "Between 3 to 6 Lakh press orange option" +
-                "Between 6 to 12 Lakh press blue option" +
-                "Bettween 12 to 18 Lakh press red option";
+                "For less than 3 Lakh select first checkbox" +
+                "Between 3 to 6 Lakh select second checkbox" +
+                "Between 6 to 12 Lakh select third checkbox" +
+                "Bettween 12 to 18 Lakh select last option";
         toSpeechUs.setSpeechRate(0.8f);
         toSpeechUs.speak(text, TextToSpeech.QUEUE_FLUSH,null);
 
