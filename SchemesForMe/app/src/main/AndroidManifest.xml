@@ -19,27 +19,22 @@
         </activity>
         <activity
             android:name=".English2Activity"
-            android:label="@string/title_activity_english2"
+
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".English1Activity"
-            android:label="@string/title_activity_english1"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Hindi1Activity"
-            android:label="@string/title_activity_hindi1"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Tamil1Activity"
-            android:label="@string/title_activity_tamil1"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".English3Activity"
-            android:label="@string/title_activity_english3"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".English4Activity"
-            android:label="@string/title_activity_english4"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Lt3Activity" />
         <activity android:name=".Lt6Activity" />
@@ -48,23 +43,18 @@
         <activity android:name=".Mig2Activity" />
         <activity
             android:name=".Hindi3Activity"
-            android:label="@string/title_activity_hindi3"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Hindi4Activity"
-            android:label="@string/title_activity_hindi4"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Hindi2Activity"
-            android:label="@string/title_activity_hindi2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".English5Activity"
-            android:label="@string/title_activity_english5"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Hindi5Activity"
-            android:label="@string/title_activity_hindi5"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
