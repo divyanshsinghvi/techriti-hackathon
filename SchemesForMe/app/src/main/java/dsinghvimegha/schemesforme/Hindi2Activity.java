@@ -12,7 +12,6 @@ import android.widget.RadioButton;
 
 public class Hindi2Activity extends AppCompatActivity {
 
-
     TextToSpeech toSpeechUs;
     int result;
     String text;
@@ -34,7 +33,7 @@ public class Hindi2Activity extends AppCompatActivity {
     }
     public void TTS(View view){
 
-        text = "वह योजना चुनें, जिसके लिए आप अपनी पात्रता जानना चाहते हैं\n" +
+        text = "वह योजना चुनें, जिसके लिए आप अपनी पात्रता जानना चाहते हैं" +
                 "3 से 6 लाख के लिए प्रथम चेकबॉक्स चुनें" +
                 "3 लाख से कम के लिए दूसरा चेकबॉक्स चुनें" +
                 "6 से 12 लाख के लिए तीसरा चेकबॉक्स चुनें" +
@@ -69,12 +68,11 @@ public class Hindi2Activity extends AppCompatActivity {
         }
     }
 
-    public void next(View view){
-        Intent intent = new Intent(this, Hindi3Activity.class);
+    public void nexti(View view){
+        Intent intent = new Intent(this,Hindi3Activity.class);
         startActivity(intent);
 
     }
-
     public void previous(View view){
         Intent intent = new Intent(this, Hindi1Activity.class);
         startActivity(intent);

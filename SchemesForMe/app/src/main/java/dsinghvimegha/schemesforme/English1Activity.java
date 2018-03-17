@@ -59,6 +59,7 @@ public class English1Activity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
     public void previous(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
