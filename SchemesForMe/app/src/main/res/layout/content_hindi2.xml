@@ -6,75 +6,74 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="dsinghvimegha.schemesforme.Hindi2Activity"
+    tools:layout_editor_absoluteY="137dp"
     tools:showIn="@layout/activity_hindi2">
 
     <Button
         android:id="@+id/button"
-        android:layout_width="115dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="10dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="3dp"
         android:drawableBottom="@android:drawable/ic_btn_speak_now"
         android:onClick="TTS"
         android:src="@android:drawable/ic_media_play"
         android:text="speaker"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup3"
+        app:layout_constraintStart_toStartOf="@+id/button3" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioGroup3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/button8" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <RadioButton
-        android:id="@+id/radioButton5"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="44dp"
-        android:layout_marginTop="41dp"
-        android:text="3 से 6 लाख"
-        app:layout_constraintBottom_toBottomOf="@+id/radioButton6"
-        app:layout_constraintEnd_toEndOf="@+id/radioButton6"
-        app:layout_constraintStart_toStartOf="@+id/radioButton6"
-        app:layout_constraintTop_toTopOf="@+id/radioButton7" />
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="129dp"
+            android:layout_height="44dp"
+            android:text="3 से 6 लाख"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="201dp" />
 
-    <RadioButton
-        android:id="@+id/radioButton7"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="173dp"
-        android:text="3 लाख से कम"
-        app:layout_constraintEnd_toEndOf="@+id/radioButton5"
-        app:layout_constraintStart_toStartOf="@+id/radioButton5"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="129dp"
+            android:layout_height="44dp"
+            android:text="3 लाख से कम"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="201dp" />
 
-    <RadioButton
-        android:id="@+id/radioButton6"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="44dp"
-        android:layout_marginTop="41dp"
-        android:text="6 से 12 लाख"
-        app:layout_constraintBottom_toBottomOf="@+id/radioButton3"
-        app:layout_constraintEnd_toEndOf="@+id/radioButton3"
-        app:layout_constraintStart_toStartOf="@+id/radioButton3"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton7" />
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="129dp"
+            android:layout_height="44dp"
+            android:text="6 से 12 लाख"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="231dp" />
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="129dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="164dp"
-        android:layout_marginStart="36dp"
-        android:text="12 से 18 लाख"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="129dp"
+            android:layout_height="43dp"
+            android:text="12 से 18 लाख"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="248dp" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="35dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="11dp"
         android:layout_marginEnd="37dp"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="48dp"
         android:autoText="true"
         android:autofillHints="@android:drawable/bottom_bar"
         android:background="@android:color/darker_gray"
@@ -82,10 +81,9 @@
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton7"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"

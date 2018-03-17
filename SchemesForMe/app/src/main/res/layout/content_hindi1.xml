@@ -6,73 +6,72 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="dsinghvimegha.schemesforme.Hindi1Activity"
+    tools:layout_editor_absoluteY="81dp"
     tools:showIn="@layout/activity_hindi1">
 
     <Button
         android:id="@+id/button"
-        android:layout_width="115dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:layout_marginEnd="26dp"
+        android:layout_marginTop="104dp"
         android:drawableBottom="@android:drawable/ic_btn_speak_now"
         android:onClick="TTS"
         android:src="@android:drawable/ic_media_play"
         android:text="speaker"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
 
-    <RadioButton
-        android:id="@+id/radioButton5"
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioGroup2"
         android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="44dp"
-        android:layout_marginTop="41dp"
-        android:text="वित्त"
-        app:layout_constraintBottom_toBottomOf="@+id/radioButton6"
-        app:layout_constraintEnd_toEndOf="@+id/radioButton6"
-        app:layout_constraintStart_toStartOf="@+id/radioButton6"
-        app:layout_constraintTop_toTopOf="@+id/radioButton7" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-    <RadioButton
-        android:id="@+id/radioButton7"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="173dp"
-        android:text="आवास"
-        app:layout_constraintEnd_toEndOf="@+id/radioButton5"
-        app:layout_constraintStart_toStartOf="@+id/radioButton5"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="101dp"
+            android:layout_height="44dp"
+            android:text="वित्त"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="214dp" />
 
-    <RadioButton
-        android:id="@+id/radioButton6"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="44dp"
-        android:layout_marginTop="41dp"
-        android:text="शिक्षात्मक"
-        app:layout_constraintBottom_toBottomOf="@+id/radioButton3"
-        app:layout_constraintEnd_toEndOf="@+id/radioButton3"
-        app:layout_constraintStart_toStartOf="@+id/radioButton3"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton7" />
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="101dp"
+            android:layout_height="44dp"
+            android:text="आवास"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="173dp" />
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="101dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="165dp"
-        android:layout_marginStart="38dp"
-        android:text="अन्य"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="101dp"
+            android:layout_height="44dp"
+            android:text="शिक्षात्मक"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="258dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="101dp"
+            android:layout_height="51dp"
+            android:text="अन्य"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="295dp" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="35dp"
-        android:layout_marginBottom="44dp"
         android:layout_marginEnd="37dp"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="94dp"
         android:autoText="true"
         android:autofillHints="@android:drawable/bottom_bar"
         android:background="@android:color/darker_gray"
@@ -80,31 +79,31 @@
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="17dp"
+        android:layout_marginEnd="176dp"
         android:layout_marginStart="16dp"
         android:onClick="previous"
         android:text="पिछला"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="17dp"
         android:layout_marginEnd="38dp"
         android:onClick="nexti"
         android:text="अगला"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ProgressBar
