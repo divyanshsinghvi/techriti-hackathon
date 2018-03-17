@@ -44,7 +44,7 @@
         <activity android:name=".Lt6Activity" />
         <activity android:name=".Lt10Activity" />
         <activity android:name=".Mig1Activity" />
-        <activity android:name=".Mig2Activity"></activity>
+        <activity android:name=".Mig2Activity" />
         <activity
             android:name=".Hindi3Activity"
             android:label="@string/title_activity_hindi3"
@@ -52,6 +52,10 @@
         <activity
             android:name=".Hindi4Activity"
             android:label="@string/title_activity_hindi4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Hindi2Activity"
+            android:label="@string/title_activity_hindi2"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

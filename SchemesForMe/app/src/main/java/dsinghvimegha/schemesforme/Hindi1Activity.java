@@ -43,7 +43,7 @@ public class Hindi1Activity extends AppCompatActivity {
 
 
     }
-    public void next(View view){
+    public void nexti(View view){
         Intent intent = new Intent(this,Hindi2Activity.class);
         startActivity(intent);
 

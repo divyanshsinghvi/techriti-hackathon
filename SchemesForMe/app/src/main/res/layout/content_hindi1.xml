@@ -12,12 +12,14 @@
         android:id="@+id/button"
         android:layout_width="115dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="26dp"
         android:drawableBottom="@android:drawable/ic_btn_speak_now"
         android:onClick="TTS"
         android:src="@android:drawable/ic_media_play"
         android:text="speaker"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="451dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <RadioButton
         android:id="@+id/radioButton5"
@@ -100,7 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="17dp"
         android:layout_marginEnd="38dp"
-        android:onClick="next"
+        android:onClick="nexti"
         android:text="अगला"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

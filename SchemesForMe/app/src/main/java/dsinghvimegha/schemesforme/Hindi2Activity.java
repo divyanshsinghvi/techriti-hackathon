@@ -11,7 +11,6 @@ import android.view.View;
 
 public class Hindi2Activity extends AppCompatActivity {
 
-
     TextToSpeech toSpeechUs;
     int result;
     String text;
@@ -43,13 +42,11 @@ public class Hindi2Activity extends AppCompatActivity {
 
 
     }
-
-    public void next(View view){
-        Intent intent = new Intent(this, Hindi3Activity.class);
+    public void nexti(View view){
+        Intent intent = new Intent(this,Hindi3Activity.class);
         startActivity(intent);
 
     }
-
     public void previous(View view){
         Intent intent = new Intent(this, Hindi1Activity.class);
         startActivity(intent);
